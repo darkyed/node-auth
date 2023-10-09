@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <h1>Dashboard</h1>
+    <% if (!user) { %>
+    <p>You are not logged in. <a href="/auth/login">Login</a></p>
+    <% } else { %>
+    <p>Hello, <%= user.username %>! <a href="/auth/logout">Logout</a></p>
+    <% } %>
+  </body>
+</html>

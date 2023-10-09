@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Signup</title>
+  </head>
+  <body>
+    <h1>Signup</h1>
+    <form action="/auth/signup" method="post">
+      <div>
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" required />
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required />
+      </div>
+      <div>
+        <button type="submit">Signup</button>
+      </div>
+    </form>
+    <p>Already have an account? <a href="/auth/login">Log in</a></p>
+  </body>
+</html>
